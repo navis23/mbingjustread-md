@@ -1,0 +1,14 @@
+[Desktop Entry]
+Type=Application
+Name=mbingjustread-md
+GenericName=Markdown Reader
+GenericName[id]=Pembaca Markdown
+Comment=Read Markdown files, fast and accurately
+Comment[id]=Baca berkas Markdown dengan cepat dan akurat
+Exec=mbingjustread-md %f
+Icon=mbingjustread-md
+Terminal=false
+Categories=Utility;Viewer;Office;
+MimeType=text/markdown;text/x-markdown;
+Keywords=markdown;md;reader;viewer;
+StartupWMClass=mbingjustread-md

@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <rect width="64" height="64" rx="14" fill="#FFD60A"/>
+  <!-- The Markdown mark: an M, and an arrow pointing down the page. -->
+  <path d="M11 44V20h6l7 9 7-9h6v24h-6V29.5l-7 8.800-7-8.800V44z" fill="#0e0e10"/>
+  <path d="M47 20v13h5.500L44 44l-8.500-11H41V20z" fill="#0e0e10" transform="translate(4.500 0)"/>
+</svg>
