@@ -1,0 +1,14 @@
+#!/bin/sh
+# Screenshot the app without a display. See tests/shot/shot.cpp for the steps.
+#   bin/shot - tests/fixtures/showcase.md /tmp/page.png T find:table
+set -eu
+
+ROOT="$(CDPATH= cd -- "$(dirname -- "$0")/.." && pwd)"
+mkdir -p "$ROOT/build/shot"
+(
+    cd "$ROOT/build/shot"
+    qmake6 "$ROOT/tests/shot/shot.pro" >/dev/null
+    make -j"$(nproc)" >/dev/null
+)
+QT_QPA_PLATFORM=offscreen QT_QUICK_BACKEND=software QT_FORCE_STDERR_LOGGING=1 \
+    exec "$ROOT/build/shot/shot" "$@"

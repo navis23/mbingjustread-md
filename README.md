@@ -77,10 +77,14 @@ Or start it empty and press `O`, or drop a file on the window.
 bin/build                                   # qmake6 + make into build/
 build/mbingjustread-md tests/fixtures/showcase.md
 bin/test                                    # Qt Test, offscreen
+bin/shot - tests/fixtures/showcase.md page.png T find:table
+                                            # screenshot without a display
 ```
 
 `tests/fixtures/showcase.md` uses every supported structure and is the page
-to look at after changing the renderer. How the code is put together is in
+to look at after changing the renderer. `bin/shot` drives the real window
+offscreen (keys, search, links, clicks; see `tests/shot/shot.cpp`) and saves
+what it shows. How the code is put together is in
 [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md).
 
 ## License
