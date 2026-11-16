@@ -27,6 +27,7 @@ If a feature does not make reading a file better, it does not go in.
 | Code highlighting | Our own small lexer | Keeps the binary small; comments, strings, numbers, keywords, and calls are what the eye needs |
 | File dialog | xdg-desktop-portal over D-Bus, behind a `FilePicker` interface | Native dialog on Linux; the interface is the seam for macOS and Windows |
 | Packaging | Arch package via `makepkg` | Installs like any other Omarchy app and lands in the launcher |
+| License | MIT in `LICENSE` (plain text), credits in `NOTICE` | Plain text so GitHub detects MIT; the Omacut and Monologue notice, which their MIT license requires, ships beside it in the package |
 
 ## Version 0.1 (this version): Linux and Omarchy
 

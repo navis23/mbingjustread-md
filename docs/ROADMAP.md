@@ -10,6 +10,10 @@ See [PLAN.md](PLAN.md).
 
 ## 0.2 — Linux polish
 
+- Done 2026-11-16: the repository is public and open source (MIT, with the
+  Omacut and Monologue credit in `NOTICE`)
+- Done 2026-11-16: the outline marks the section being read, not the one
+  before it
 - Publish a GitHub release and add the package to `omacom/omarchy-pkgs`, so
   it installs with `omarchy-pkg-add`; an AUR package for other Arch users
 - Faster opening of very large files (lay out the visible part first)
