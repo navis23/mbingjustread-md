@@ -1,3 +1,4 @@
+// The translator follows Omacut and Monologue (MIT, David Heinemeier Hansson).
 #include "translator.h"
 
 #include <QDir>

@@ -1,3 +1,4 @@
+// The portal file picker follows Omacut's (MIT, David Heinemeier Hansson).
 #include "portalfilepicker.h"
 
 #include <QDBusArgument>

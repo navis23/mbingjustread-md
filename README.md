@@ -89,6 +89,7 @@ what it shows. How the code is put together is in
 
 ## License
 
-MIT. The theme watching, translator, and project layout follow
-[Omacut](https://github.com/omacom-io/omacut) and
-[Monologue](https://github.com/omacom/monologue) by David Heinemeier Hansson.
+MIT, see [LICENSE](LICENSE). The theme watching, translator, file picker,
+and project layout follow [Omacut](https://github.com/omacom-io/omacut) and
+[Monologue](https://github.com/omacom/monologue) by David Heinemeier Hansson,
+also MIT; their notice is in [NOTICE](NOTICE).
