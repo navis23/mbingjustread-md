@@ -29,6 +29,10 @@ ApplicationWindow {
     function scrollBy(dy) { scrollTo(flick.contentY + dy) }
     function showPosition(position, margin) {
         scrollTo(page.y + page.positionToRectangle(position).y - margin)
+        // A jump marks the heading it went to, even one near the end of the
+        // file that can never scroll up to the reading line.
+        if (outlineVisible)
+            currentHeading = backend.headingAt(position)
     }
     // The character at the top of the view, which is how the page keeps its
     // place when the same file is rendered again.
@@ -52,9 +56,12 @@ ApplicationWindow {
         updateCurrentHeading()
     }
 
+    // The current section is the one being read: the last heading above a
+    // line a quarter of the way down the view. A line at the very top marked
+    // the previous section while the next heading was already on screen.
     function updateCurrentHeading() {
         if (outlineVisible)
-            currentHeading = backend.headingAt(page.positionAt(0, Math.max(0, flick.contentY - page.y + 32)))
+            currentHeading = backend.headingAt(page.positionAt(0, Math.max(0, flick.contentY - page.y + flick.height / 4)))
     }
 
     function openSearch() {
